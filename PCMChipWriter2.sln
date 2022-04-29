@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCMChipWriter2", "PCMChipWriter2\PCMChipWriter2.csproj", "{39166144-721E-4BB8-86FF-FB43DDA1B89F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39166144-721E-4BB8-86FF-FB43DDA1B89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39166144-721E-4BB8-86FF-FB43DDA1B89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39166144-721E-4BB8-86FF-FB43DDA1B89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39166144-721E-4BB8-86FF-FB43DDA1B89F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A68929A-7CC1-4D22-BC35-950CC11FA44C}
+	EndGlobalSection
+EndGlobal
