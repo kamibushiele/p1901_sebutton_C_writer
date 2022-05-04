@@ -321,7 +321,7 @@ namespace PCMChipWriter2
 
         private void aboutAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var versionDialog = new Version();
+            var versionDialog = new VersionForm();
             versionDialog.ShowDialog();
         }
 

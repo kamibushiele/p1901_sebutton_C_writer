@@ -1,6 +1,6 @@
 ﻿namespace PCMChipWriter2
 {
-    partial class Version
+    partial class VersionForm
     {
         /// <summary>
         /// Required designer variable.

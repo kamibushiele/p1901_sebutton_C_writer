@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PCMChipWriter2
 {
-    public partial class Version : Form
+    public partial class VersionForm : Form
     {
-        public Version()
+        public VersionForm()
         {
             InitializeComponent();
         }
