@@ -87,34 +87,34 @@ namespace PCMChipWriter2
                 eepromUsage.ForeColor = Color.Green;
             }
             eepromUsage.Value = (int)Math.Round(paercent);
-            FlashButtonUpadate();
+            FlushButtonUpadate();
         }
-        private void FlashButtonUpadate()
+        private void FlushButtonUpadate()
         {
             if (
                 chipWriter.SoundBinary.Error == SoundBinary.SoundBinaryError.NoError 
                 && chipWriter.SoundBinary.Binary.Length > 0
                 && listPorts.SelectedIndex >= 0)
             {
-                buttonFlash.Enabled = true;
+                buttonFlush.Enabled = true;
             }
             else
             {
-                buttonFlash.Enabled = false;
+                buttonFlush.Enabled = false;
             }
         }
 
-        private void buttonFlash_Click(object sender, EventArgs e)
+        private void buttonFlush_Click(object sender, EventArgs e)
         {
             if (listPorts.SelectedIndex < 0)
             {
-                //LogUpdate("Select SerialPort to flash.\r\n");
+                //LogUpdate("Select SerialPort to flush.\r\n");
                 return;
             }
 
             string portname = portList[listPorts.SelectedIndex].Name;
             chipWriter.WriteStart(portname);
-            buttonFlash.Enabled= false;
+            buttonFlush.Enabled= false;
 
         }
         private void ReloadPorts()
@@ -125,7 +125,7 @@ namespace PCMChipWriter2
             {
                 listPorts.Items.Add(i.EasyName);
             }
-            FlashButtonUpadate();
+            FlushButtonUpadate();
         }
 
         private void LogUpdate(string text)
@@ -148,8 +148,8 @@ namespace PCMChipWriter2
                 Invoke(new Action<double>(ProgressUpdate), progress);
                 return;
             }
-            progressBarFlash.Value = (int)Math.Round(progress*100);
-            labelProgressFlash.Text = $"{(int)Math.Round(progress * 100)}%";
+            progressBarFlush.Value = (int)Math.Round(progress*100);
+            labelProgressFlush.Text = $"{(int)Math.Round(progress * 100)}%";
         }
         private void EndCallBackFunction(BinaryWriter.Error  result)
         {
@@ -160,13 +160,13 @@ namespace PCMChipWriter2
             }
             if(result != BinaryWriter.Error.NoError)
             {
-                LogUpdate("Flash Failed.\r\n");
+                LogUpdate("Flush Failed.\r\n");
             }
             else
             {
-                LogUpdate("Flash Success.\r\n");
+                LogUpdate("Flush Success.\r\n");
             }
-            FlashButtonUpadate();
+            FlushButtonUpadate();
         }
         private void buttonReload_Click(object sender, EventArgs e)
         {
@@ -327,7 +327,7 @@ namespace PCMChipWriter2
 
         private void listPorts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FlashButtonUpadate();
+            FlushButtonUpadate();
         }
     }
 }

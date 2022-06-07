@@ -129,7 +129,7 @@ namespace PCMChipWriter2
                     }
                     this.LogUpdate("Open port.\r\n");
                     LogUpdate("Send preamble...");
-                    serialPort.Write("FLASH");
+                    serialPort.Write("FLASH");//"FLUSH"ではない
                     State = State_e.SendSize;
                     break;
                 case State_e.SendSize:

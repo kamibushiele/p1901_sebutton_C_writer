@@ -45,13 +45,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.eepromUsage = new System.Windows.Forms.ProgressBar();
-            this.buttonFlash = new System.Windows.Forms.Button();
+            this.buttonFlush = new System.Windows.Forms.Button();
             this.listPorts = new System.Windows.Forms.ListBox();
-            this.progressBarFlash = new System.Windows.Forms.ProgressBar();
+            this.progressBarFlush = new System.Windows.Forms.ProgressBar();
             this.buttonReload = new System.Windows.Forms.Button();
             this.buttonClearLog = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.labelProgressFlash = new System.Windows.Forms.Label();
+            this.labelProgressFlush = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelModelName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -222,16 +222,16 @@
             this.eepromUsage.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.eepromUsage.TabIndex = 3;
             // 
-            // buttonFlash
+            // buttonFlush
             // 
-            this.buttonFlash.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonFlash.Location = new System.Drawing.Point(321, 125);
-            this.buttonFlash.Name = "buttonFlash";
-            this.buttonFlash.Size = new System.Drawing.Size(75, 23);
-            this.buttonFlash.TabIndex = 3;
-            this.buttonFlash.Text = "Flash";
-            this.buttonFlash.UseVisualStyleBackColor = true;
-            this.buttonFlash.Click += new System.EventHandler(this.buttonFlash_Click);
+            this.buttonFlush.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFlush.Location = new System.Drawing.Point(321, 125);
+            this.buttonFlush.Name = "buttonFlush";
+            this.buttonFlush.Size = new System.Drawing.Size(75, 23);
+            this.buttonFlush.TabIndex = 3;
+            this.buttonFlush.Text = "Flush";
+            this.buttonFlush.UseVisualStyleBackColor = true;
+            this.buttonFlush.Click += new System.EventHandler(this.buttonFlush_Click);
             // 
             // listPorts
             // 
@@ -246,15 +246,15 @@
             this.listPorts.TabIndex = 2;
             this.listPorts.SelectedIndexChanged += new System.EventHandler(this.listPorts_SelectedIndexChanged);
             // 
-            // progressBarFlash
+            // progressBarFlush
             // 
-            this.progressBarFlash.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBarFlash.Location = new System.Drawing.Point(321, 154);
-            this.progressBarFlash.MarqueeAnimationSpeed = 1;
-            this.progressBarFlash.Name = "progressBarFlash";
-            this.progressBarFlash.Size = new System.Drawing.Size(257, 23);
-            this.progressBarFlash.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBarFlash.TabIndex = 3;
+            this.progressBarFlush.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBarFlush.Location = new System.Drawing.Point(321, 154);
+            this.progressBarFlush.MarqueeAnimationSpeed = 1;
+            this.progressBarFlush.Name = "progressBarFlush";
+            this.progressBarFlush.Size = new System.Drawing.Size(257, 23);
+            this.progressBarFlush.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBarFlush.TabIndex = 3;
             // 
             // buttonReload
             // 
@@ -289,15 +289,15 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "ROM Usage";
             // 
-            // labelProgressFlash
+            // labelProgressFlush
             // 
-            this.labelProgressFlash.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelProgressFlash.Location = new System.Drawing.Point(584, 152);
-            this.labelProgressFlash.Name = "labelProgressFlash";
-            this.labelProgressFlash.Size = new System.Drawing.Size(29, 23);
-            this.labelProgressFlash.TabIndex = 2;
-            this.labelProgressFlash.Text = "100%";
-            this.labelProgressFlash.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelProgressFlush.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelProgressFlush.Location = new System.Drawing.Point(584, 152);
+            this.labelProgressFlush.Name = "labelProgressFlush";
+            this.labelProgressFlush.Size = new System.Drawing.Size(29, 23);
+            this.labelProgressFlush.TabIndex = 2;
+            this.labelProgressFlush.Text = "100%";
+            this.labelProgressFlush.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel1
             // 
@@ -500,17 +500,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 311);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.progressBarFlash);
+            this.Controls.Add(this.progressBarFlush);
             this.Controls.Add(this.eepromUsage);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.labelProgressFlash);
+            this.Controls.Add(this.labelProgressFlush);
             this.Controls.Add(this.labelSondsNum);
             this.Controls.Add(this.eepromUsageText);
             this.Controls.Add(this.listPorts);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonReload);
             this.Controls.Add(this.buttonClearLog);
-            this.Controls.Add(this.buttonFlash);
+            this.Controls.Add(this.buttonFlush);
             this.Controls.Add(this.textBoxLog);
             this.Controls.Add(this.audioFileList);
             this.Controls.Add(this.menuStrip1);
@@ -539,13 +539,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ProgressBar eepromUsage;
-        private System.Windows.Forms.Button buttonFlash;
+        private System.Windows.Forms.Button buttonFlush;
         private System.Windows.Forms.ListBox listPorts;
-        private System.Windows.Forms.ProgressBar progressBarFlash;
+        private System.Windows.Forms.ProgressBar progressBarFlush;
         private System.Windows.Forms.Button buttonReload;
         private System.Windows.Forms.Button buttonClearLog;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label labelProgressFlash;
+        private System.Windows.Forms.Label labelProgressFlush;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label label1;
